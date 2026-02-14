@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: rgb(231, 231, 219);
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: rgb(70, 0, 0);
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header h1{
+   margin-bottom: 0.5rem;
+}
+
+nav {
+    display: flex;              /* THIS is what you're missing */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+#School_Logo {
+    width: 200px;
+    height: auto;
+    
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+  color: rgb(70, 0, 0);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  border-bottom: 3px solid rgb(70, 0, 0);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+    margin: 1rem 0 0.5rem;
+    color: rgb(100, 0, 0);
+    font-size: 1.3rem;
+}
+
+p {
+    max-width: 65ch;
+    margin-bottom: 1rem;
+}
+/*About Me Section*/
+.about-content{
+    display:flex;
+    align-items: flex-start;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.about-text{
+    flex:1;
+    min-width: 300px;
+}
+.about-text ul{
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+
+}
+
+
+.profile-pic {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+/*Project Section*/
+.project-card{
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 3px solid rgb(70, 0, 0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.project-card h3{
+    margin-top: 0;
+}
+
+#projects ol{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+#projects ol li{
+    margin-bottom: 0.5rem;
+}
+
+#projects a {
+    color: rgb(70,0,0);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#projects a:hover{
+    text-decoration: underline;
+}
+
+#projects p {
+    max-width: 85ch;
+    margin-bottom: 1rem;
+}
+
+/*Skills Section*/
+#skills p{
+    max-width: 80ch;
+     margin: 0 auto 1rem auto;
+    text-align: center;
+}
+
+.skills-container{
+    margin:1.5rem 0;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+th,td{
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th{
+    background-color: rgb(70,0,0);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+tr:nth-child(even){
+  background-color: beige;
+}
+
+tr:hover{
+    background-color: #f0f0f0;
+}
+
+
+/*Contact Infor*/
+#contact p{
+    max-width: 80ch;
+    padding:1rem;
+     margin: 0 auto 1rem auto;
+    text-align: center;
+}
+
+#form-container{
+    border-radius: 8px;
+}
+
+.form-group{
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: rgb(70,0,0);
+}
+
+input, textarea, select{
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-btn{
+    background-color: rgb(70,0,0);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight:600;
+}
+
+.submit-btn:hover{
+    background-color: rgb(100, 0, 0);
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(70, 0, 0);
+    color: white;
+}
+
+/*Dark Mode*/
+
+#theme-toggle{
+    background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+#theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode{
+    background-color:#121212;
+    color: white;
+}
+.dark-mode header{
+    background-color:black;
+}
+
+.dark-mode .project-card, dark-mode table{
+    background-color:  #1e1e1e;
+    color: white;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3{
+    color: #ffcccc;
+    border-bottom-color: #ffcccc;
+}
+
+.dark-mode table {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode th {
+    background-color: #660000;
+    color: white;
+}
+
+.dark-mode tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.dark-mode tr:hover {
+    background-color: #333333;
+}
+
+.dark-mode #form-container {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+}
+.dark-mode input, .dark-mode textarea {
+    background-color: #2a2a2a;
+    color: white;
+    border: 2px solid #444;
+}
+
+.dark-mode a {
+    color: #ff8080;
+}
+
+/*Media Query for smaller screens*/
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  th, td {
+    padding: 0.4rem;
+  }
+}
