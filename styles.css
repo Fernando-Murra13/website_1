@@ -12,6 +12,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/*Header/Nav*/
 header {
     background-color: rgb(70, 0, 0);
     color: white;
@@ -19,11 +20,11 @@ header {
 }
 
 header h1{
-   margin-bottom: -2rem;
+   margin-bottom: 0.5rem;
 }
 
 nav {
-    display: flex;              /* THIS is what you're missing */
+    display: flex;             
     align-items: center;
     justify-content: space-between;
 }
@@ -56,7 +57,7 @@ main {
     max-width: 900px;
     margin: auto;
 }
-
+/*CSS for Sections and font color*/
 section {
     margin-bottom: 3rem;
 }
@@ -260,7 +261,7 @@ footer {
     background-color:black;
 }
 
-.dark-mode .project-card, dark-mode table{
+.dark-mode .project-card{
     background-color:  #1e1e1e;
     color: white;
 }
